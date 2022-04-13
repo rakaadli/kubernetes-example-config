@@ -1,0 +1,25 @@
+2. Command apply pod:
+
+```
+kuebctl apply -f 2-create-pod.yaml
+```
+
+3. Command menampilkan detail pod dan deployment:
+
+```
+kubectl describe pod <nama-pod>
+kubectl describe deployment <nama-deployment>
+```
+
+4. Command menampilkan semua deployment
+
+```bash
+kubectl get deploymens
+```
+
+5. Beberapa command pod lainnya:
+
+```bash
+kubectl delete pod my-pod1
+kubectl get pod
+```
