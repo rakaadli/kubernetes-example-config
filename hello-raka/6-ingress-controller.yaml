@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: hello-world
-          image: adamstudiodocker/udemy-praktis-belajar-docker-dan-kubernetes-untuk-pemula:hello-world
+          image: rakaadli/hello-raka:plain
           env:
             - name: PORT
               value: "8081"
@@ -43,12 +43,13 @@ spec:
     - host: my-rap.com
       http:
         paths:
-        - path: /v1(/|$)(.*)
-          backend:
-            serviceName: my-service4
-            servicePort: 8081
-        - path: /v2(/|$)(.*)
-          backend:
-            serviceName: my-service3
-            servicePort: 8080
+          - path: /v1(/|$)(.*)
+            backend:
+              serviceName: my-service4
+              servicePort: 8081
+          - path: /v2(/|$)(.*)
+            backend:
+              serviceName: my-service3
+              servicePort: 8080
 ---
+
