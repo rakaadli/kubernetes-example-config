@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: hello-world-v2
-          image: adamstudiodocker/udemy-praktis-belajar-docker-dan-kubernetes-untuk-pemula:hello-mariadb
+          image: rakaadli/hello-raka:with-mariadb
           env:
             - name: PORT
               value: "8080"
